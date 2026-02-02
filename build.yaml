@@ -13,12 +13,6 @@
 #
 ---
 include:
-  - board: planck_rev6
-  # Commented out - not using Corneish Zen
-  # - board: corneish_zen_v2_left
-  # - board: corneish_zen_v2_right
-  - board: glove80_lh
-  - board: glove80_rh
   # Boardsource Unicorne (custom blecorne board)
   - board: blecorne_left
     snippet: studio-rpc-usb-uart
