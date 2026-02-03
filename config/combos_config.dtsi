@@ -1,0 +1,30 @@
+/*
+ * COMBO CONFIGURATION
+ *
+ * Modular combo system - include what works for your keycap profile:
+ *
+ *   #include "combos_horizontal.dtsi"  // Works on ALL keycaps
+ *   #include "combos_vertical.dtsi"    // Needs FLAT keycaps (DSA, XDA, etc.)
+ *
+ * COVERAGE SUMMARY:
+ *   Horizontal: esc, tab, bspc, del, cut/copy/paste, ( ) [ ] { } < >, mouse, leader
+ *   Vertical:   @ # $ % ` \ = ~ ^ + * & _ - / |
+ *
+ * If using horizontal-only, you'll need alternative access to the 16 vertical
+ * symbols via layers, leader sequences, or other methods.
+ *
+ * TIMING:
+ *   FAST (18ms term, 150ms idle) - horizontal combos, multi-finger press
+ *   SLOW (30ms term, 50ms idle)  - vertical combos, single-finger slide
+ */
+
+#ifndef COMBOS_CONFIG_DTSI
+#define COMBOS_CONFIG_DTSI
+
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
+
+#endif // COMBOS_CONFIG_DTSI

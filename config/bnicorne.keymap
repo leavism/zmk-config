@@ -17,7 +17,9 @@
 
 /* Combos, leader key sequences, mouse emulation */
 
-#include "combos.dtsi" // Must be sourced after behaviors.
+// Combos must be sourced after behaviors.dtsi
+#include "combos_horizontal.dtsi"  // Works on all keycap profiles
+#include "combos_vertical.dtsi"    // Needs flat keycaps (DSA, XDA, etc.)
 #include "leader.dtsi"
 #include "mouse.dtsi"
 
