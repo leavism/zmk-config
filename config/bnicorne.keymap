@@ -18,8 +18,8 @@
 /* Combos, leader key sequences, mouse emulation */
 
 // Combos must be sourced after behaviors.dtsi
-#include "combos_horizontal.dtsi"  // Works on all keycap profiles
-#include "combos_vertical.dtsi"    // Needs flat keycaps (DSA, XDA, etc.)
+#include "combos_horizontal.dtsi"  
+#include "combos_vertical.dtsi"    
 #include "leader.dtsi"
 #include "mouse.dtsi"
 
@@ -45,7 +45,7 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
    &kp TAB       &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp DQT       &kp BSPC
    &kp ESC       &hml LGUI A   &hml LCTRL R  &hml LSHFT S  &hml LALT T   &kp G             &kp M         &hmr LALT N   &hmr RSHFT E  &hmr LCTRL I  &hmr LGUI O   &kp SQT
    &kp FSLH      &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        &kp MINUS
-                                             MAGIC_SHIFT   SMART_NUM     XXX               &lt FN RET    &lt_spc NAV 0 MAGIC_SHIFT
+                                             BETTER_SHIFT  SMART_NUM     XXX               &lt FN RET    &lt_spc NAV 0 BETTER_SHIFT
             >;
         };
 
@@ -57,7 +57,7 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //    ___           ___           Left Click    Mid Click     Right Click   ___              Insert        Tab           Shift+Tab     Swapper       ___           ___
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-//                                              ___           ___           ___              Wheel Up      Wheel Down    ___
+//                                              ___           ___           ___              ___           ___           ___
 //                                           ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
             bindings = <
    &kp LA(F4)    &kp LG(Q)     U_WH_U        U_MS_U        U_WH_D        ___               &kp PG_UP     ___           ___           ___           NAV_DEL       NAV_BSPC
@@ -81,7 +81,7 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
    ___           &kp F12       &kp F7        &kp F8        &kp F9        ___               ___           &kp C_PREV    &kp C_VOL_UP  &kp C_NEXT    ___           ___
    ___           &hml LGUI F11 &hml LALT F4  &hml LSHFT F5 &hml LCTRL F6 ___               ___           DSK_PREV      VOL_DOWN      DSK_NEXT      ___           ___
    ___           &kp F10       &kp F1        &kp F2        &kp F3        ___               PIN_APP       PIN_WIN       DSK_MGR       ___           ___           ___
-                                             ___           ___           ___               &kp C_MUTE    &kp C_PP      ___
+                                             ___           ___           ___               ___           ___           ___
             >;
         };
 
