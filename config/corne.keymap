@@ -1,4 +1,4 @@
-// Boardsource Unicorne (blecorne) - 42-key wireless Corne
+// Typeractive Corne (nice_nano_v2 + nice_view_gem) - 42-key wireless Corne
 
 #define CONFIG_WIRELESS
 #include <zmk-helpers/key-labels/42.h>
